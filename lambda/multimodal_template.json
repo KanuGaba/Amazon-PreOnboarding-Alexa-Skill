@@ -1,0 +1,96 @@
+{
+    "type": "APL",
+    "version": "1.1",
+    "settings": {},
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.1.0"
+        }
+    ],
+    "resources": [],
+    "styles": {
+        "centerText": {
+            "values": [
+                {
+                    "textAlign": "center"
+                }
+            ]
+        },
+        "dotText": {
+            "values": [
+                {
+                    "fontSize": "60px",
+                    "textAlign": "center"
+                }
+            ]
+        }
+    },
+    "onMount": [],
+    "graphics": {},
+    "commands": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "text",
+            "imageUrl"
+        ],
+        "items": [
+            {
+                "type": "Container",
+                "when": "${@viewportProfile != @hubRoundSmall}",
+                "items": [
+                    {
+                        "type": "AlexaBackground",
+                        "backgroundImageSource": "${imageUrl.content}",
+                        "imageScale": "best-fill",
+                        "colorOverlay": true,
+                        "backgroundAlign": "center",
+                        "backgroundScale": "best-fill"
+                    },
+                    {
+                        "type": "Text",
+                        "grow": 1,
+                        "shrink": 1,
+                        "style": "centerText",
+                        "text": "${text.content}"
+                    }
+                ],
+                "height": "100%",
+                "width": "100%",
+                "paddingLeft": "@marginHorizontal",
+                "paddingRight": "@marginHorizontal",
+                "paddingTop": "@spacingLarge",
+                "paddingBottom": "@spacingLarge"
+            },
+            {
+                "type": "Container",
+                "when": "${@viewportProfile == @hubRoundSmall}",
+                "items": [
+                    {
+                        "type": "AlexaBackground",
+                        "backgroundImageSource": "https://pbs.twimg.com/profile_images/949070360103698432/kXSiPeTk.jpg",
+                        "colorOverlay": true,
+                        "backgroundAlign": "center",
+                        "backgroundScale": "best-fill"
+                    },
+                    {
+                        "type": "Text",
+                        "grow": 1,
+                        "shrink": 1,
+                        "paddingTop": "72dp",
+                        "style": "dotText",
+                        "text": "Day Zero"
+                    }
+                ],
+                "height": "100%",
+                "width": "100%",
+                "paddingLeft": "@marginHorizontal",
+                "paddingRight": "@marginHorizontal",
+                "paddingTop": "@spacingLarge",
+                "paddingBottom": "@spacingLarge"
+            }
+        ]
+    }
+}

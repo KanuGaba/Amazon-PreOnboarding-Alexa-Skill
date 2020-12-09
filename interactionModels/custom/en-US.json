@@ -1,0 +1,1205 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "day zero",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "PreparingIntent",
+          "slots": [],
+          "samples": [
+            "What can I do to get ready for my internship",
+            "Do I need to learn anything before starting",
+            "Do I need to do any trainings before starting",
+            "How do I get ready for my internship",
+            "How can I prepare for my internship",
+            "What can I do to prepare for my internship role"
+          ]
+        },
+        {
+          "name": "RoommateSurveyIntent",
+          "slots": [
+            {
+              "name": "office",
+              "type": "AMAZON.AT_CITY",
+              "samples": [
+                "I will be working in {office}",
+                "I will be working at {office}",
+                "I am working in {office}",
+                "I am working at {office}",
+                "{office}"
+              ]
+            },
+            {
+              "name": "gender",
+              "type": "gender",
+              "samples": [
+                "I am now {gender}",
+                "I identify as {gender}",
+                "I am {gender}",
+                "{gender}"
+              ]
+            },
+            {
+              "name": "roommate_gender_preference",
+              "type": "gender",
+              "samples": [
+                "I would like to live with {gender}",
+                "I would prefer to live with {gender}",
+                "{gender}"
+              ]
+            },
+            {
+              "name": "room_style_preference",
+              "type": "room_type",
+              "samples": [
+                "I would like a {room_style_preference}",
+                "I would like {room_style_preference}",
+                "I would prefer {room_style_preference}",
+                "{room_style_preference}"
+              ]
+            },
+            {
+              "name": "cleanliness",
+              "type": "cleanliness",
+              "samples": [
+                "I\u0027m a {cleanliness} person",
+                "I have {cleanliness} cleanliness",
+                "I am pretty {cleanliness}",
+                "I am {cleanliness}",
+                "{cleanliness}"
+              ]
+            },
+            {
+              "name": "cleanliness_level_preference",
+              "type": "cleanliness",
+              "samples": [
+                "I would like my roommates to be {cleanliness} cleanliness",
+                "I would like my roommate to be {cleanliness} cleanliness",
+                "{cleanliness} cleanliness",
+                "I would like my roommate to be {cleanliness}",
+                "I would like my roommates to be {cleanliness}",
+                "{cleanliness}"
+              ]
+            },
+            {
+              "name": "active_hours",
+              "type": "acitve_hours_types",
+              "samples": [
+                "{active_hours} person",
+                "I am a {active_hours} person",
+                "{active_hours}"
+              ]
+            },
+            {
+              "name": "active_hours_preference",
+              "type": "acitve_hours_types",
+              "samples": [
+                "I would like my roommate to be a {active_hours} person",
+                "I would like my roommates to be {active_hours} people",
+                "{active_hours}"
+              ]
+            },
+            {
+              "name": "personality",
+              "type": "personality",
+              "samples": [
+                "I am a usually {personality} person",
+                "I am a pretty {personality} person",
+                "I am pretty {personality}",
+                "I am usually {personality}",
+                "I would say that I am {personality}",
+                "I am {personality}",
+                "{personality}"
+              ]
+            },
+            {
+              "name": "personality_preference",
+              "type": "personality",
+              "samples": [
+                "I would like to live with {personality} people",
+                "{personality} people",
+                "{personality}"
+              ]
+            },
+            {
+              "name": "interesting_fact",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{interesting_fact}"
+              ]
+            }
+          ],
+          "samples": [
+            "Start the roommate match making survey",
+            "Start roommate survey",
+            "Start matching survey",
+            "Start roommate matching survey",
+            "I am looking for roommates",
+            "I\u0027m looking for roommates",
+            "I\u0027m looking for a roommate",
+            "I am looking for a roommate",
+            "Help me find a roommate"
+          ]
+        },
+        {
+          "name": "EquipmentIntent",
+          "slots": [],
+          "samples": [
+            "Do I get equipment",
+            "Will I have to get my own equipment",
+            "Does Amazon provide me any equipment",
+            "Will I use my own laptop",
+            "What equipment do I need",
+            "Will I have to use my own computer",
+            "What if I need additional equipment",
+            "What if I do not have what I need for a home office"
+          ]
+        },
+        {
+          "name": "CountryOfOfferIntent",
+          "slots": [],
+          "samples": [
+            "What if my location changes",
+            "What if my location changes prior to my start date",
+            "Does it make if difference if I am unable to travel to the country listed in my internship offer",
+            "What if I cannot come to my designated location",
+            "What if I am unable to travel",
+            "What if there are travel bans",
+            "What if I have unforseen travel circumstances",
+            "What if there are travel restrictions",
+            "What if I am not able to travel to the country listed in my internship offer letter"
+          ]
+        },
+        {
+          "name": "VirtualEventsIntent",
+          "slots": [],
+          "samples": [
+            "Are there any events planned",
+            "What events are planned for the internship",
+            "Will there be any events",
+            "Will there be any intern events",
+            "Will there be any intern events conducted virtually"
+          ]
+        },
+        {
+          "name": "SubscribeRemindersIntent",
+          "slots": [],
+          "samples": [
+            "Give me internship reinders",
+            "I want to subscribe to internship reminder",
+            "I want internship reminders",
+            "Subscribe to reminders",
+            "I want to subscribe to internship reminders",
+            "I want to subscribe to reminders"
+          ]
+        },
+        {
+          "name": "StartDateConfirmationIntent",
+          "slots": [
+            {
+              "name": "month",
+              "type": "AMAZON.Month"
+            },
+            {
+              "name": "day",
+              "type": "AMAZON.Ordinal"
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER"
+            }
+          ],
+          "samples": [
+            "My start date is  {day} {month}  {year}",
+            "My start date is on  {day} {month} {year}",
+            "I am starting on  {day} {month} {year}",
+            "I am starting on {day} {month} ",
+            "My start date is on {day}  {month}",
+            "{day} {month}",
+            "{day} {month} {year}",
+            "My start date is on {month} {day} ",
+            "I am starting on {month} {day} ",
+            "I am starting on {month} {day} {year}",
+            "{month} {year}",
+            "{month} {day}",
+            "{month} {day} {year}",
+            "My start date is on {month} {day} {year}",
+            "My start date is {month} {day} {year}"
+          ]
+        },
+        {
+          "name": "WorkingHoursIntent",
+          "slots": [],
+          "samples": [
+            "What will my working hours be",
+            "Will I have to work in my team\u0027s timezone",
+            "Will I have to have the same working hours as my team",
+            "What if I am in a diffferent time zone",
+            "If my time zone is different from the team should I follow the team\u0027s working hours",
+            "Can I set my own working hours"
+          ]
+        },
+        {
+          "name": "TaxesIntent",
+          "slots": [],
+          "samples": [
+            "How will working virtually affect taxes",
+            "Will working virtually affect my taxes",
+            "How will I be taxed",
+            "Where will my taxes be based on",
+            "Will we be taxed based on the location we were based at or our current location"
+          ]
+        },
+        {
+          "name": "StartDateIntent",
+          "slots": [],
+          "samples": [
+            "How do I change my start date",
+            "How can I delay my start date",
+            "How can I postpone my internship",
+            "Is it possible to delay my start date",
+            "Is it possible to postpone my start date",
+            "Where can I change my start date",
+            "Can my start date change",
+            "Can I change my start date",
+            "Can I move my start date"
+          ]
+        },
+        {
+          "name": "AmazonGearIntent",
+          "slots": [],
+          "samples": [
+            "Are there any goodies",
+            "Do we get goodies",
+            "Will I get swag",
+            "Is there swag",
+            "Will we get any kind of merch",
+            "Is there intern themed swag",
+            "Do we get swag",
+            "Will we receive Amazon gear or swag"
+          ]
+        },
+        {
+          "name": "MentorIntent",
+          "slots": [],
+          "samples": [
+            "Is there a mentor",
+            "Will I have a mentor",
+            "Do interns have mentors",
+            "Who do I ask for help with my project",
+            "Will I have someone to help me with my project",
+            "Will we be assigned a mentor"
+          ]
+        },
+        {
+          "name": "TimeOffIntent",
+          "slots": [],
+          "samples": [
+            "Do I have paid vacation",
+            "Can I take a day off",
+            "Do I have paid time off",
+            "Do I have PTO",
+            "Do I have time off",
+            "Do interns get time off",
+            "What if I have to take time off",
+            "What if I have to go on a leave",
+            "Can I go on leave"
+          ]
+        },
+        {
+          "name": "EndDateIntent",
+          "slots": [],
+          "samples": [
+            "Who do I talk to in order to extend my internship",
+            "How can I postpone my internship end date",
+            "Is it possible to extend my internship",
+            "How do I extend my internship duration",
+            "Can my internship be extended",
+            "Is it possible to change my internship end date",
+            "Can I change my internship date",
+            "How do I change my internship end date"
+          ]
+        },
+        {
+          "name": "AWSEducateIntent",
+          "slots": [],
+          "samples": [
+            "What is Amazon Web Services Educate",
+            "Can you tell me about Amazon Web Services Educate",
+            "How can I learn more about Amazon Web Services Educate",
+            "How can I learn more about AWS Educate",
+            "Can you tell me about AWS Educate",
+            "What is AWS Educate"
+          ]
+        },
+        {
+          "name": "AWSAcademyIntent",
+          "slots": [],
+          "samples": [
+            "How can I learn more about Amazon Web Services Academy",
+            "How can I learn more about AWS Academy",
+            "Can you tell me about Amazon Web Services Academy",
+            "Can you tell me about AWS Academy",
+            "What is Amazon Web Services Academy",
+            "What is AWS Academy"
+          ]
+        },
+        {
+          "name": "TeamChangeIntent",
+          "slots": [],
+          "samples": [
+            "Is it possible to change my team",
+            "Is it possible to change my organization",
+            "Where can I change my team",
+            "Where can I change my organization",
+            "How do I change my organization",
+            "How do I change my team",
+            "Can I change my team",
+            "Can my organization be changed"
+          ]
+        },
+        {
+          "name": "TeamInfoIntent",
+          "slots": [],
+          "samples": [
+            "How do I contact my team",
+            "What is the name of my team",
+            "How do I see my team placement",
+            "Who will I be working with",
+            "Who is my manager",
+            "When do I learn my exact team placement",
+            "When can I know my team",
+            "Where do I see my team",
+            "What team am I placed on",
+            "What team am I on",
+            "When will I learn my exact team placement"
+          ]
+        },
+        {
+          "name": "PortalChangesIntent",
+          "slots": [],
+          "samples": [
+            "I am seeing a lot of changes in my portal. What does that mean"
+          ]
+        },
+        {
+          "name": "VirtualDurationIntent",
+          "slots": [],
+          "samples": [
+            "If circumstances change will my internship remain virtual",
+            "If the situation changes will my internship remain virtual",
+            "Are there any in person events during the internship",
+            "Will the entire internship be virtual",
+            "If Coronavirus goes away will I have to relocate to my assigned location",
+            "If things change will my internship remain virtual"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "No questions",
+            "I do not have any more questions",
+            "No more questions"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "I have a question",
+            "Question",
+            "Yes I have more questions",
+            "Yeah I have questions",
+            "Yeah I have more questions",
+            "I have more questions",
+            "Yes I have questions"
+          ]
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
+          "name": "EmailIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Send an email asking {question}",
+            "Email asking {question}",
+            "Send email asking {question}",
+            "Send email {question}",
+            "Email {question}"
+          ]
+        },
+        {
+          "name": "FunFactIntent",
+          "slots": [],
+          "samples": [
+            "Fun fact",
+            "Give me a fun fact",
+            "Do you have any fun facts about Amazon",
+            "Tell me a fun fact about Amazon",
+            "Amazon fact",
+            "Do you have and facts",
+            "Tell me a fact",
+            "What are some Amazon facts",
+            "Do you have any facts about Amazon",
+            "Tell me a fact about Amazon",
+            "Do you have any Amazon Facts",
+            "Tell me an Amazon Fact"
+          ]
+        },
+        {
+          "name": "PotentialRoommateIntent",
+          "slots": [],
+          "samples": [
+            "Show me roommates",
+            "I want to see my potential roommates",
+            "Can I see my potential roommates",
+            "I want to see my roomates",
+            "Can I see my roommates",
+            "Show me my roommates",
+            "Show me a potential roommate"
+          ]
+        },
+        {
+          "name": "GetInternshipRemindersIntent",
+          "slots": [],
+          "samples": [
+            "Do I have any reminders",
+            "What are my reminders",
+            "Do I have any internship reminders",
+            "I want to know my internship reminders",
+            "tell me my reminders"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "no preference"
+              }
+            },
+            {
+              "name": {
+                "value": "shared room"
+              }
+            },
+            {
+              "name": {
+                "value": "shared"
+              }
+            },
+            {
+              "name": {
+                "value": "single room"
+              }
+            },
+            {
+              "name": {
+                "value": "single"
+              }
+            }
+          ],
+          "name": "room_type"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "females"
+              }
+            },
+            {
+              "name": {
+                "value": "makes"
+              }
+            },
+            {
+              "name": {
+                "value": "chicks"
+              }
+            },
+            {
+              "name": {
+                "value": "dudes"
+              }
+            },
+            {
+              "name": {
+                "value": "girls"
+              }
+            },
+            {
+              "name": {
+                "value": "guys"
+              }
+            },
+            {
+              "name": {
+                "value": "non binary"
+              }
+            },
+            {
+              "name": {
+                "value": "female"
+              }
+            },
+            {
+              "name": {
+                "value": "male"
+              }
+            }
+          ],
+          "name": "gender"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "no preference"
+              }
+            },
+            {
+              "name": {
+                "value": "clean"
+              }
+            },
+            {
+              "name": {
+                "value": "neat"
+              }
+            }
+          ],
+          "name": "cleanliness"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "no preference"
+              }
+            },
+            {
+              "name": {
+                "value": "early riser"
+              }
+            },
+            {
+              "name": {
+                "value": "night person"
+              }
+            },
+            {
+              "name": {
+                "value": "night owl"
+              }
+            },
+            {
+              "name": {
+                "value": "night"
+              }
+            },
+            {
+              "name": {
+                "value": "morning person"
+              }
+            },
+            {
+              "name": {
+                "value": "morning"
+              }
+            }
+          ],
+          "name": "acitve_hours_types"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "extroverted"
+              }
+            },
+            {
+              "name": {
+                "value": "introverted"
+              }
+            },
+            {
+              "name": {
+                "value": "no preference"
+              }
+            },
+            {
+              "name": {
+                "value": "loud apartment"
+              }
+            },
+            {
+              "name": {
+                "value": "quiet apartment"
+              }
+            },
+            {
+              "name": {
+                "value": "quiet"
+              }
+            },
+            {
+              "name": {
+                "value": "loud"
+              }
+            },
+            {
+              "name": {
+                "value": "noisey"
+              }
+            }
+          ],
+          "name": "personality"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Vancouver"
+              }
+            },
+            {
+              "name": {
+                "value": "Toronto"
+              }
+            },
+            {
+              "name": {
+                "value": "Costa Rica"
+              }
+            },
+            {
+              "name": {
+                "value": "Graz"
+              }
+            },
+            {
+              "name": {
+                "value": "Dresden"
+              }
+            },
+            {
+              "name": {
+                "value": "Berlin"
+              }
+            },
+            {
+              "name": {
+                "value": "Dublin"
+              }
+            },
+            {
+              "name": {
+                "value": "Bucharest"
+              }
+            },
+            {
+              "name": {
+                "value": "Madrid"
+              }
+            },
+            {
+              "name": {
+                "value": "Edinburgh"
+              }
+            },
+            {
+              "name": {
+                "value": "London"
+              }
+            },
+            {
+              "name": {
+                "value": "Tel Aviv"
+              }
+            },
+            {
+              "name": {
+                "value": "Haifa"
+              }
+            },
+            {
+              "name": {
+                "value": "Bangalore"
+              }
+            },
+            {
+              "name": {
+                "value": "Hydrebad"
+              }
+            },
+            {
+              "name": {
+                "value": "New Delhi"
+              }
+            },
+            {
+              "name": {
+                "value": "Chennai"
+              }
+            },
+            {
+              "name": {
+                "value": "Cape Town"
+              }
+            },
+            {
+              "name": {
+                "value": "Tempe"
+              }
+            },
+            {
+              "name": {
+                "value": "San Luis Obispo"
+              }
+            },
+            {
+              "name": {
+                "value": "San Francisco"
+              }
+            },
+            {
+              "name": {
+                "value": "Pittsburgh"
+              }
+            },
+            {
+              "name": {
+                "value": "New York City"
+              }
+            },
+            {
+              "name": {
+                "value": "New York"
+              }
+            },
+            {
+              "name": {
+                "value": "Minneapolis"
+              }
+            },
+            {
+              "name": {
+                "value": "Irvine"
+              }
+            },
+            {
+              "name": {
+                "value": "Herndon"
+              }
+            },
+            {
+              "name": {
+                "value": "Gurnee"
+              }
+            },
+            {
+              "name": {
+                "value": "Detroit"
+              }
+            },
+            {
+              "name": {
+                "value": "Cupertino"
+              }
+            },
+            {
+              "name": {
+                "value": "Austin"
+              }
+            },
+            {
+              "name": {
+                "value": "Cambridge"
+              }
+            },
+            {
+              "name": {
+                "value": "Boston"
+              }
+            },
+            {
+              "name": {
+                "value": "Seattle"
+              }
+            }
+          ],
+          "name": "AMAZON.AT_CITY"
+        }
+      ],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "RoommateSurveyIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "office",
+              "type": "AMAZON.AT_CITY",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.501924648108.668829625333"
+              }
+            },
+            {
+              "name": "gender",
+              "type": "gender",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.501924648108.183624690685"
+              }
+            },
+            {
+              "name": "roommate_gender_preference",
+              "type": "gender",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.501924648108.1024073415335"
+              }
+            },
+            {
+              "name": "room_style_preference",
+              "type": "room_type",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.501924648108.1065994645190"
+              }
+            },
+            {
+              "name": "cleanliness",
+              "type": "cleanliness",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1169718152622.1029371998261"
+              }
+            },
+            {
+              "name": "cleanliness_level_preference",
+              "type": "cleanliness",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.501924648108.1113413387060"
+              }
+            },
+            {
+              "name": "active_hours",
+              "type": "acitve_hours_types",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.501924648108.1022535299127"
+              }
+            },
+            {
+              "name": "active_hours_preference",
+              "type": "acitve_hours_types",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1169718152622.293236735534"
+              }
+            },
+            {
+              "name": "personality",
+              "type": "personality",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.501924648108.205568110455"
+              }
+            },
+            {
+              "name": "personality_preference",
+              "type": "personality",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.501924648108.782823122577"
+              }
+            },
+            {
+              "name": "interesting_fact",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.623850314690.1506338138695"
+              }
+            }
+          ],
+          "delegationStrategy": "SKILL_RESPONSE"
+        },
+        {
+          "name": "StartDateConfirmationIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "month",
+              "type": "AMAZON.Month",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1254383445357.1591339385854"
+              }
+            },
+            {
+              "name": "day",
+              "type": "AMAZON.Ordinal",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1254383445357.1091094770740"
+              }
+            },
+            {
+              "name": "year",
+              "type": "AMAZON.FOUR_DIGIT_NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1254383445357.355172067383"
+              }
+            }
+          ]
+        },
+        {
+          "name": "EmailIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.510659614951"
+          },
+          "slots": [
+            {
+              "name": "question",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.501924648108.668829625333",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What city are you working in?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.501924648108.183624690685",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What gender do you identify as, male, female, or non-binary?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.501924648108.1024073415335",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What gender would you prefer your roommates to be, male, female, or non-binary. If you have no preference, state no preference. "
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.501924648108.1065994645190",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you like a shared room or single room. If you have no preference, state no preference. "
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.501924648108.1113413387060",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you like your roommates to be of neat, messy, or average cleanliness. If you have no preference, state no preference. "
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.501924648108.1022535299127",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Are you a morning or night person?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.501924648108.205568110455",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you say you are an introverted or extroverted person?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.501924648108.782823122577",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you like to live with introverted or extroverted people. If you have no preference, answer no preference."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1169718152622.1029371998261",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you describe your cleanliness level as neat, average, or messy?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1169718152622.293236735534",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you prefer your roommates to be night or morning people. If you have no preference, answer no preference."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1254383445357.1591339385854",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What month is your start date?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1254383445357.1091094770740",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What day is your start date?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1254383445357.355172067383",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What year is your start date?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.623850314690.1506338138695",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Tell me something that you find interesting."
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.510659614951",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you like to send an email to ASP Offers Onboarding asking {question} ?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "65"
+}

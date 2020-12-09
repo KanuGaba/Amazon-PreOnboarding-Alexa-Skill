@@ -1,0 +1,1 @@
+{"type":"APL","version":"1.4","theme":"light","import":[],"settings":{},"resources":[],"styles":{},"onMount":[],"graphics":{},"commands":{},"layouts":{},"mainTemplate":{"parameters":["payload"],"items":[{"type":"Text","height":"100vh","textAlign":"center","textAlignVertical":"center","text":""}]}}
